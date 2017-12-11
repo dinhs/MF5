@@ -122,6 +122,8 @@ GameObject:
   - component: {fileID: 1799452260}
   - component: {fileID: 1799452262}
   - component: {fileID: 1799452263}
+  - component: {fileID: 1799452264}
+  - component: {fileID: 1799452265}
   m_Layer: 0
   m_Name: Ken
   m_TagString: Untagged
@@ -207,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3e703bc3a6cfd4b8a0bf5c880c1cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
 --- !u!50 &1799452261
 Rigidbody2D:
   serializedVersion: 4
@@ -215,14 +217,14 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799452256}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 20
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -239,8 +241,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f497898b1ac1c294392f4218f9e8f0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitBox: {fileID: 1782863228846700, guid: 55a87f6608abd854dbe2654c5fc77080, type: 2}
-  hurtBox: {fileID: 1884180242856192, guid: 490b919a0d0b1554399ca6f5b4656f1c, type: 2}
+  hitBox: {fileID: 1325262546774136, guid: 3632f038a50679d45bc543dff3e2be60, type: 2}
+  hurtBox: {fileID: 1131418818442686, guid: bef4ca37175fda9418b52bb6d0b872a2, type: 2}
+  idle: {fileID: 21300014, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  punch1: {fileID: 21300016, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  punch2: {fileID: 21300018, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  punch3: {fileID: 21300020, guid: ed7cac529017853419b7c36099231a0e, type: 3}
 --- !u!114 &1799452263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +258,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a28497a1808774fa2a2594095cedf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1799452264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799452256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217cfecca29cd064ca0429903e830ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitBox: {fileID: 1143864175365788, guid: 3e8d409560ad97e429c1538b98a0bb9d, type: 2}
+  hurtBox: {fileID: 1456547257118314, guid: 675d4feec90bef848ac7a4c9dcc6d58c, type: 2}
+  idle: {fileID: 21300052, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  startRecov: {fileID: 21300050, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  activeKick: {fileID: 21300048, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+--- !u!114 &1799452265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799452256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33188b87de09994f9774119acd52466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtBox: {fileID: 1218210151185024, guid: c7bde2d855bab1047aeaf37dc20d53f4, type: 2}
+  idle: {fileID: 21300008, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  start1: {fileID: 21300000, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  start2: {fileID: 21300002, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  active1: {fileID: 21300004, guid: ed7cac529017853419b7c36099231a0e, type: 3}
+  active2: {fileID: 21300006, guid: ed7cac529017853419b7c36099231a0e, type: 3}
 --- !u!1 &2067035751
 GameObject:
   m_ObjectHideFlags: 0

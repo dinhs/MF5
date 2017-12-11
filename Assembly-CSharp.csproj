@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{94B7A461-9C28-24E4-77E4-5A5E87E84A2C}</ProjectGuid>
+    <ProjectGuid>{E45D29A0-E00E-70E7-1182-A5534217A194}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,10 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharStats.cs" />
-     <Compile Include="Assets\Scripts\KenController.cs" />
-     <Compile Include="Assets\Scripts\LPKen.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Characters\Ken\BaseMoveScript.cs" />
+     <Compile Include="Assets\Characters\Ken\CharStats.cs" />
+     <Compile Include="Assets\Characters\Ken\HadouKen.cs" />
+     <Compile Include="Assets\Characters\Ken\KenController.cs" />
+     <Compile Include="Assets\Characters\Ken\KickKen.cs" />
+     <Compile Include="Assets\Characters\Ken\LPKen.cs" />
+     <Compile Include="Assets\Characters\Ken\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\StateManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
